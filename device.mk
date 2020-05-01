@@ -234,6 +234,10 @@ PRODUCT_PACKAGES += \
     TetheringResOverlayYunluo \
     WifiResOverlayYunluo
 
+# Overlays (Lineage)
+PRODUCT_PACKAGES += \
+    LineageSDKOverlayYunluo
+
 # Init scripts
 PRODUCT_PACKAGES += \
     init.insmod.sh \
