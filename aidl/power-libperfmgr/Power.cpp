@@ -47,7 +47,8 @@ constexpr char kPowerHalRenderingProp[] = "vendor.powerhal.rendering";
 
 Power::Power()
     : mInteractionHandler(nullptr),
-      mSustainedPerfModeOn(false) {
+      mSustainedPerfModeOn(false),
+      mBatterySaverOn(false) {
     mInteractionHandler = std::make_unique<InteractionHandler>();
     mInteractionHandler->Init();
 
@@ -73,6 +74,13 @@ Power::Power()
     }
 }
 
+static void endAllHints() {
+    std::shared_ptr<HintManager> hm = HintManager::GetInstance();
+    for (auto hint : hm->GetHints()) {
+        hm->EndHint(hint);
+    }
+}
+
 ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
     LOG(DEBUG) << "Power setMode: " << toString(type) << " to: " << enabled;
     if (HintManager::GetInstance()->GetAdpfProfile() &&
@@ -85,6 +93,15 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
                 HintManager::GetInstance()->DoHint("SUSTAINED_PERFORMANCE");
             }
             mSustainedPerfModeOn = true;
+            break;
+        case Mode::LOW_POWER:
+            if (enabled) {
+                endAllHints();
+                HintManager::GetInstance()->DoHint("LOW_POWER");
+            } else {
+                HintManager::GetInstance()->EndHint("LOW_POWER");
+            }
+            mBatterySaverOn = enabled;
             break;
         case Mode::LAUNCH:
             if (mSustainedPerfModeOn) {
@@ -106,6 +123,7 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
         case Mode::AUDIO_STREAMING_LOW_LATENCY:
             [[fallthrough]];
         default:
+            if (mBatterySaverOn) break;
             if (enabled) {
                 HintManager::GetInstance()->DoHint(toString(type));
             } else {
@@ -118,7 +136,8 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
 }
 
 ndk::ScopedAStatus Power::isModeSupported(Mode type, bool *_aidl_return) {
-    bool supported = HintManager::GetInstance()->IsHintSupported(toString(type));
+    bool supported = type == Mode::LOW_POWER
+            || HintManager::GetInstance()->IsHintSupported(toString(type));
     LOG(INFO) << "Power mode " << toString(type) << " isModeSupported: " << supported;
     *_aidl_return = supported;
     return ndk::ScopedAStatus::ok();
@@ -132,7 +151,7 @@ ndk::ScopedAStatus Power::setBoost(Boost type, int32_t durationMs) {
     }
     switch (type) {
         case Boost::INTERACTION:
-            if (mSustainedPerfModeOn) {
+            if (mSustainedPerfModeOn || mBatterySaverOn) {
                 break;
             }
             mInteractionHandler->Acquire(durationMs);
@@ -144,7 +163,7 @@ ndk::ScopedAStatus Power::setBoost(Boost type, int32_t durationMs) {
         case Boost::AUDIO_LAUNCH:
             [[fallthrough]];
         default:
-            if (mSustainedPerfModeOn) {
+            if (mSustainedPerfModeOn || mBatterySaverOn) {
                 break;
             }
             if (durationMs > 0) {
@@ -175,9 +194,11 @@ constexpr const char *boolToString(bool b) {
 binder_status_t Power::dump(int fd, const char **, uint32_t) {
     std::string buf(::android::base::StringPrintf(
             "HintManager Running: %s\n"
-            "SustainedPerformanceMode: %s\n",
+            "SustainedPerformanceMode: %s\n"
+            "BatterySaverMode: %s\n",
             boolToString(HintManager::GetInstance()->IsRunning()),
-            boolToString(mSustainedPerfModeOn)));
+            boolToString(mSustainedPerfModeOn),
+            boolToString(mBatterySaverOn)));
     // Dump nodes through libperfmgr
     HintManager::GetInstance()->DumpToFd(fd);
     PowerSessionManager::getInstance()->dumpToFd(fd);
