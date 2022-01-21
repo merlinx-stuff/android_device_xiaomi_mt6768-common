@@ -26,6 +26,9 @@ wifi.tethering.interface=ap0
 vendor.rild.libargs=-d /dev/ttyC0
 vendor.rild.libpath=mtk-ril.so
 
+# Dexopt
+dalvik.vm.dex2oat64.enabled=true
+
 # Netflix
 ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
 ro.netflix.signup=1
