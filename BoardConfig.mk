@@ -134,6 +134,7 @@ TARGET_SCREEN_DENSITY := 280
 
 # Properties
 TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/props/system.prop
+TARGET_SYSTEM_EXT_PROP += $(CONFIGS_PATH)/props/system_ext.prop
 TARGET_VENDOR_PROP += $(CONFIGS_PATH)/props/vendor.prop
 
 # Android Verified Boot
