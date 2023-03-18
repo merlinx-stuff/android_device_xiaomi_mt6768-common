@@ -224,7 +224,8 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResOverlayYunluo
+    FrameworksResOverlayYunluo \
+    WifiResOverlayYunluo
 
 # Init scripts
 PRODUCT_PACKAGES += \
