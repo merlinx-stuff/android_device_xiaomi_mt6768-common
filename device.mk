@@ -96,6 +96,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
+# FastbootD
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.xml
