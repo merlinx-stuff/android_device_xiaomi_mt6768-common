@@ -247,5 +247,8 @@ debug.mtk_tflite.target_nnapi=29
 # IncrementalFS
 ro.incremental.enable=yes
 
+# Zygote
+zygote.critical_window.minute=10
+
 # Gralloc
 persist.log.tag.gralloc4=S
