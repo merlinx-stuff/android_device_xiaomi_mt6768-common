@@ -242,6 +242,7 @@ debug.sf.enable_transaction_tracing=false
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1
 debug.stagefright.ccodec=0
+debug.sf.layer_caching_active_layer_timeout_ms=1000
 
 # TEE
 ro.vendor.mtk_tee_gp_support=1
