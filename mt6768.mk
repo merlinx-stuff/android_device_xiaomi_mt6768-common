@@ -386,6 +386,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek/libmtkperf_client \
+    hardware/xiaomi \
     $(LOCAL_PATH)
 
 # Thermal
