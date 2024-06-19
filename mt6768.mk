@@ -56,7 +56,8 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.mt6768
 
 PRODUCT_PACKAGES += \
-    libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
+    libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
+    vendor.goodix.hardware.fingerprint@1.0
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
