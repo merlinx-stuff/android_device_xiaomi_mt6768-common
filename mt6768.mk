@@ -142,6 +142,12 @@ PRODUCT_PACKAGES += \
     libion.vendor \
     libdrm.vendor
 
+# Dolby
+PRODUCT_PACKAGES += \
+    libstagefright_softomx.vendor \
+    libstagefright_softomx_plugin.vendor \
+    libsqlite.vendor
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
