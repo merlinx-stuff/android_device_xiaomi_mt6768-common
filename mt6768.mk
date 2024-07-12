@@ -379,7 +379,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_audio \
     libshim_beanpod \
-    libpiex_shim
+    libpiex_shim \
+    libui_shim
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
