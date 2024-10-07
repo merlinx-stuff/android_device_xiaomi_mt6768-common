@@ -131,6 +131,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.OperatorUtils=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.WfoApp=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.GsmCdmaConn=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.hwcomposer=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.Phone=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.RIL-CC=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.RpCallControl=$(VENDOR_LOG_LEVEL) \
