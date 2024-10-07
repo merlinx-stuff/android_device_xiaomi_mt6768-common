@@ -121,7 +121,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcurl.vendor \
-    libexpat.vendor
+    libexpat.vendor \
+    libgralloctypes.vendor
 
 # Disable SF configstore
 PRODUCT_PACKAGES += \
@@ -141,6 +142,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libdrm \
+    libui.vendor \
+    libion.vendor \
     libdrm.vendor
 
 # fastbootd
@@ -163,6 +166,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
+
+PRODUCT_PACKAGES += \
+    libgatekeeper.vendor
 
 # GNSS
 PRODUCT_PACKAGES += \
@@ -393,6 +399,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libshim_sensors \
+    libpower.vendor \
     libsensorndkbridge
 
 # Shims
