@@ -6,6 +6,7 @@
 
 DEVICE_PATH := device/xiaomi/yunluo
 KERNEL_PATH := device/xiaomi/yunluo-kernel
+CONFIGS_PATH := $(DEVICE_PATH)/configs
 
 # Architecture
 TARGET_ARCH := arm64
@@ -130,6 +131,10 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6789
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_SCREEN_DENSITY := 280
+
+# Properties
+TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/props/system.prop
+TARGET_VENDOR_PROP += $(CONFIGS_PATH)/props/vendor.prop
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
