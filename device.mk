@@ -92,6 +92,10 @@ PRODUCT_PACKAGES += \
     android.software.vulkan.deqp.level-2021-03-01.prebuilt.xml \
     android.software.opengles.deqp.level-2021-03-01.prebuilt.xml
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.hardware_keystore.xml
+
 # MediaCas
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
