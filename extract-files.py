@@ -47,6 +47,7 @@ blob_fixups: blob_fixups_user_type = {
         "android.hardware.security.keymint-V1-ndk_platform.so",
         "android.hardware.security.keymint-V3-ndk.so",
     )
+    .add_needed("android.hardware.security.rkp-V3-ndk.so")
     .replace_needed(
         *fixup_ndk_platform("android.hardware.security.secureclock-V1-ndk_platform.so")
     )
