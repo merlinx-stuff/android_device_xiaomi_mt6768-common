@@ -383,3 +383,18 @@ vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta
 vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta
 vendor/thh/ta/8aaaf201246000007143fe4f7c823c80.ta
 vendor/thh/ta/isee_model.json
+
+# Wi-Fi
+vendor/bin/conninfra_loader
+vendor/bin/hw/tetheroffloadservice
+vendor/bin/netdagent
+vendor/bin/wlan_assistant
+vendor/bin/wmt_launcher
+vendor/bin/wmt_loader
+vendor/etc/init/netdagent.rc
+vendor/etc/init/tetheroffloadservice.rc
+vendor/etc/init/wlan_assistant.rc
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+vendor/lib64/libforkexecwrap.so
+vendor/lib64/libifcutils_mtk.so
