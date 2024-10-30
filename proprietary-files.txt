@@ -194,6 +194,44 @@ vendor/etc/dsi_l83_44_02_0b_cphy_vdo_mi.xml
 vendor/etc/dsi_l83_44_02_0c_cphy_vdo_mi.xml
 vendor/etc/screen_light.xml
 
+# Firmware
+vendor/firmware/BT_FW.cfg
+vendor/firmware/NT36xxx_MP_Setting_Criteria_596C.csv
+vendor/firmware/NT36xxx_MP_Setting_Criteria_596D.csv
+vendor/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin
+vendor/firmware/WIFI_RAM_CODE_soc2_2_1e_1.bin
+vendor/firmware/WMT_SOC.cfg
+vendor/firmware/fm_cust.cfg
+vendor/firmware/gt9886_cfg_6877v01.bin
+vendor/firmware/gt9886_firmware_6877v01.bin
+vendor/firmware/gt9896s_cfg_6789v01.bin
+vendor/firmware/gt9896s_firmware_6789v01.bin
+vendor/firmware/lib3a.ccu
+vendor/firmware/mt6631_fm_v1_coeff.bin
+vendor/firmware/mt6631_fm_v1_patch.bin
+vendor/firmware/mt6635_fm_v1_coeff.bin
+vendor/firmware/mt6635_fm_v1_patch.bin
+vendor/firmware/novatek_nt36523_L83_fw01.bin
+vendor/firmware/novatek_nt36523_L83_fw02.bin
+vendor/firmware/novatek_nt36523_L83_mp01.bin
+vendor/firmware/novatek_nt36523_L83_mp02.bin
+vendor/firmware/novatek_ts_fw.bin
+vendor/firmware/novatek_ts_fw_144.bin
+vendor/firmware/novatek_ts_fw_jdi.bin
+vendor/firmware/novatek_ts_fw_tm.bin
+vendor/firmware/remoteproc_scp
+vendor/firmware/sipa.bin
+vendor/firmware/soc2_2_ram_bt_1d_1_hdr.bin
+vendor/firmware/soc2_2_ram_bt_1e_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_1d_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_1e_1_hdr.bin
+vendor/firmware/soc2_2_ram_wifi_1d_1_hdr.bin
+vendor/firmware/soc2_2_ram_wifi_1e_1_hdr.bin
+vendor/firmware/soc_fm_v1_coeff.bin
+vendor/firmware/soc_fm_v1_patch.bin
+vendor/firmware/txpowerctrl.cfg
+vendor/firmware/wifi.cfg
+
 # Graphics
 vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
