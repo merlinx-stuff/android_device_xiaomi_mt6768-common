@@ -232,6 +232,10 @@ vendor/firmware/soc_fm_v1_patch.bin
 vendor/firmware/txpowerctrl.cfg
 vendor/firmware/wifi.cfg
 
+# Gatekeeper
+vendor/lib64/hw/gatekeeper.beanpod.so
+vendor/lib64/hw/libSoftGatekeeper.so
+
 # Graphics
 vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
