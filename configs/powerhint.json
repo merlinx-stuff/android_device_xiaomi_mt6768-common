@@ -269,6 +269,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "DT2WEnable",
+      "Path": "/sys/devices/virtual/touch/touch_dev/gesture_double_tap_state",
+      "Values": [
+        "0",
+        "1"
+      ],
+      "DefaultIndex": 0
+    },
+    {
       "Name": "PowerHALRenderingState",
       "Path": "vendor.powerhal.rendering",
       "Values": [
@@ -414,6 +423,12 @@
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 2000,
       "Value": "51"
+    },
+    {
+      "PowerHint": "DOUBLE_TAP_TO_WAKE",
+      "Node": "DT2WEnable",
+      "Duration": 0,
+      "Value": "1"
     }
   ]
 }
