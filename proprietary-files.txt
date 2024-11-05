@@ -1,11 +1,11 @@
 # Unpinned blobs from missi_pad_global-user 14 UP1A.231005.007 V816.0.6.0.ULYMIXM release-keys
 
 # AAL
+vendor/lib64/mt6789/libaal_cust_func.so
+vendor/lib64/mt6789/libaalservice.so
 vendor/lib64/libaal_cust.so
 vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
-vendor/lib64/mt6789/libaal_cust_func.so
-vendor/lib64/mt6789/libaalservice.so
 
 # AEE
 vendor/lib/libaedv.so
@@ -55,7 +55,6 @@ vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 
 # Audio Configurations
-vendor/etc/AudioLog_dynamic.xml
 vendor/etc/audio_param/AudioParamOptions_mgvi.xml
 vendor/etc/audio_param/AudioParamOptions_vext.xml
 vendor/etc/audio_param/BtInfo_AudioParam.xml
@@ -169,6 +168,7 @@ vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
 vendor/etc/sixa_aurisys_param/sixth_param.txt
 vendor/etc/sixa_aurisys_param/sixth_param_voip.txt
+vendor/etc/AudioLog_dynamic.xml
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
@@ -187,10 +187,6 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 vendor/bin/hw/mt6789/camerahalserver
 vendor/etc/init/camerahalserver.rc
 vendor/etc/vintf/manifest/manifest_cameraprovider.xml
-vendor/lib64/hdr_capture.so
-vendor/lib64/hdr_preview.so
-vendor/lib64/hq_algoutils.so
-vendor/lib64/hq_asd.so
 vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so;DISABLE_CHECKELF
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
@@ -198,62 +194,6 @@ vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.ccap@1.0-impl.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.0-impl.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.1-impl.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so
-vendor/lib64/libCamera_gc08a3mipiraw_3rd_Capture.so
-vendor/lib64/libCamera_gc08a3mipiraw_3rd_Preview.so
-vendor/lib64/libCamera_gc08a3mipiraw_Doc_Capture.so
-vendor/lib64/libCamera_gc08a3mipiraw_HDRMode_Capture.so
-vendor/lib64/libCamera_gc08a3mipiraw_Night_Capture.so
-vendor/lib64/libCamera_gc08a3mipiraw_QQ_Capture.so
-vendor/lib64/libCamera_gc08a3mipiraw_Wechat_Capture.so
-vendor/lib64/libCamera_gc08a3mipiraw_Zoom_Capture.so
-vendor/lib64/libCamera_gc08a3mipiraw_Zoom_Capture4x.so
-vendor/lib64/libCamera_gc08a3mipiraw_Zoom_Preview.so
-vendor/lib64/libCamera_gc08a3mipiraw_Zoom_Preview4x.so
-vendor/lib64/libCamera_gc08a3mipiraw_Zoom_Video2x.so
-vendor/lib64/libCamera_gc08a3mipiraw_Zoom_Video4x.so
-vendor/lib64/libCamera_hi846mipiraw_3rd_Capture.so
-vendor/lib64/libCamera_hi846mipiraw_3rd_preview.so
-vendor/lib64/libCamera_hi846mipiraw_HDRMode_Capture.so
-vendor/lib64/libCamera_hi846mipiraw_QQ_Capture.so
-vendor/lib64/libCamera_hi846mipiraw_Wechat_capture.so
-vendor/lib64/libFaceCenterAlgo.so
-vendor/lib64/libJpgEncPipe.so
-vendor/lib64/libSQLiteModule_VER_ALL.so
-vendor/lib64/libarcsoft_beautyshot.so
-vendor/lib64/libarcsoft_fbpre.so
-vendor/lib64/libarcsoft_hdr_detection.so
-vendor/lib64/libarcsoft_high_dynamic_range.so
-vendor/lib64/libarcsoft_low_light_hdr.so
-vendor/lib64/libarcsoft_super_night.so
-vendor/lib64/libarcsoft_supernight.so
-vendor/lib64/libc++_shared.so
-vendor/lib64/libcam.seninfn3d.so
-vendor/lib64/libcamalgo.3dnr.so
-vendor/lib64/libcamalgo.dngop.so
-vendor/lib64/libcamalgo.eis.so
-vendor/lib64/libcamalgo.fdft.so
-vendor/lib64/libcamalgo.fsc.so
-vendor/lib64/libcamalgo.gyro.so
-vendor/lib64/libcamalgo.lmv.so
-vendor/lib64/libcamalgo.n3d.so
-vendor/lib64/libcamalgo.nr.so
-vendor/lib64/libcamalgo.platform.so
-vendor/lib64/libcamalgo.utility.so
-vendor/lib64/libcamalgo.warp.so
-vendor/lib64/libcamera_scene.so
-vendor/lib64/libfacetracker.so
-vendor/lib64/libheichal.so
-vendor/lib64/libimagebuffer_wrapper.so
-vendor/lib64/libjpeg-alpha-oal_vendor.so
-vendor/lib64/libjpeg-alpha_vendor.so
-vendor/lib64/libmorpho.photosolid.so
-vendor/lib64/libmorpho_Lowlight.so
-vendor/lib64/libmpbase.so
-vendor/lib64/libmtkcam_pipelinepolicy-aov.so
-vendor/lib64/libmtkisp_metadata.so
-vendor/lib64/libremosaic_wrapper.so
-vendor/lib64/libremosaiclib.so
-vendor/lib64/libudf.so
 vendor/lib64/mt6789/gc08a3_mipi_raw_IdxMgr.so
 vendor/lib64/mt6789/gc08a3_mipi_raw_tuning.so
 vendor/lib64/mt6789/hi846_mipi_raw_IdxMgr.so
@@ -437,6 +377,66 @@ vendor/lib64/mt6789/libmtkcam_tuning_utils.so
 vendor/lib64/mt6789/libmtkcam_ulog.so
 vendor/lib64/mt6789/libstereoinfoaccessor_vsdof.so
 vendor/lib64/mtkcam/mt6789/libmtkcam_streaminfo_plugin-p1stt.so
+vendor/lib64/hdr_capture.so
+vendor/lib64/hdr_preview.so
+vendor/lib64/hq_algoutils.so
+vendor/lib64/hq_asd.so
+vendor/lib64/libCamera_gc08a3mipiraw_3rd_Capture.so
+vendor/lib64/libCamera_gc08a3mipiraw_3rd_Preview.so
+vendor/lib64/libCamera_gc08a3mipiraw_Doc_Capture.so
+vendor/lib64/libCamera_gc08a3mipiraw_HDRMode_Capture.so
+vendor/lib64/libCamera_gc08a3mipiraw_Night_Capture.so
+vendor/lib64/libCamera_gc08a3mipiraw_QQ_Capture.so
+vendor/lib64/libCamera_gc08a3mipiraw_Wechat_Capture.so
+vendor/lib64/libCamera_gc08a3mipiraw_Zoom_Capture.so
+vendor/lib64/libCamera_gc08a3mipiraw_Zoom_Capture4x.so
+vendor/lib64/libCamera_gc08a3mipiraw_Zoom_Preview.so
+vendor/lib64/libCamera_gc08a3mipiraw_Zoom_Preview4x.so
+vendor/lib64/libCamera_gc08a3mipiraw_Zoom_Video2x.so
+vendor/lib64/libCamera_gc08a3mipiraw_Zoom_Video4x.so
+vendor/lib64/libCamera_hi846mipiraw_3rd_Capture.so
+vendor/lib64/libCamera_hi846mipiraw_3rd_preview.so
+vendor/lib64/libCamera_hi846mipiraw_HDRMode_Capture.so
+vendor/lib64/libCamera_hi846mipiraw_QQ_Capture.so
+vendor/lib64/libCamera_hi846mipiraw_Wechat_capture.so
+vendor/lib64/libFaceCenterAlgo.so
+vendor/lib64/libJpgEncPipe.so
+vendor/lib64/libSQLiteModule_VER_ALL.so
+vendor/lib64/libarcsoft_beautyshot.so
+vendor/lib64/libarcsoft_fbpre.so
+vendor/lib64/libarcsoft_hdr_detection.so
+vendor/lib64/libarcsoft_high_dynamic_range.so
+vendor/lib64/libarcsoft_low_light_hdr.so
+vendor/lib64/libarcsoft_super_night.so
+vendor/lib64/libarcsoft_supernight.so
+vendor/lib64/libc++_shared.so
+vendor/lib64/libcam.seninfn3d.so
+vendor/lib64/libcamalgo.3dnr.so
+vendor/lib64/libcamalgo.dngop.so
+vendor/lib64/libcamalgo.eis.so
+vendor/lib64/libcamalgo.fdft.so
+vendor/lib64/libcamalgo.fsc.so
+vendor/lib64/libcamalgo.gyro.so
+vendor/lib64/libcamalgo.lmv.so
+vendor/lib64/libcamalgo.n3d.so
+vendor/lib64/libcamalgo.nr.so
+vendor/lib64/libcamalgo.platform.so
+vendor/lib64/libcamalgo.utility.so
+vendor/lib64/libcamalgo.warp.so
+vendor/lib64/libcamera_scene.so
+vendor/lib64/libfacetracker.so
+vendor/lib64/libheichal.so
+vendor/lib64/libimagebuffer_wrapper.so
+vendor/lib64/libjpeg-alpha-oal_vendor.so
+vendor/lib64/libjpeg-alpha_vendor.so
+vendor/lib64/libmorpho.photosolid.so
+vendor/lib64/libmorpho_Lowlight.so
+vendor/lib64/libmpbase.so
+vendor/lib64/libmtkcam_pipelinepolicy-aov.so
+vendor/lib64/libmtkisp_metadata.so
+vendor/lib64/libremosaic_wrapper.so
+vendor/lib64/libremosaiclib.so
+vendor/lib64/libudf.so
 vendor/lib64/vendor.mediatek.hardware.camera.atms@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so
@@ -490,12 +490,12 @@ vendor/etc/screen_light.xml
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/libwvkeybox.so
-vendor/lib64/mediadrm/libwvdrmengine.so
 
 # Firmware
 vendor/firmware/BT_FW.cfg
@@ -544,17 +544,20 @@ vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/meow.cfg
 vendor/lib/egl/egl.cfg
+vendor/lib64/egl/mt6789/libGLES_mali.so
 vendor/lib64/egl/libGLES_meow.so
 vendor/lib64/egl/libMEOW_data.so
 vendor/lib64/egl/libMEOW_gift.so
 vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
-vendor/lib64/egl/mt6789/libGLES_mali.so
-vendor/lib64/hw/hwcomposer.mtk_common.so
 vendor/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/mt6789/gralloc.common.so
 vendor/lib64/hw/mt6789/vulkan.mali.so
+vendor/lib64/hw/hwcomposer.mtk_common.so
+vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so
+vendor/lib64/mt6789/libaiselector.so
+vendor/lib64/mt6789/libdpframework.so
 vendor/lib64/libDefaultFpsActor.so
 vendor/lib64/libFrameRecord.so
 vendor/lib64/libNoFpsActor.so
@@ -571,9 +574,6 @@ vendor/lib64/libion_ulit.so
 vendor/lib64/libladder.so
 vendor/lib64/libmml.so
 vendor/lib64/libpixelflinger.so
-vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so
-vendor/lib64/mt6789/libaiselector.so
-vendor/lib64/mt6789/libdpframework.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 
 # Keymaster
@@ -601,22 +601,32 @@ vendor/lib64/libkmsetkey.so
 # Media (Common)
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b;DISABLE_CHECKELF
 vendor/bin/mt6789/v3avpud.mt6789:vendor/bin/v3avpud
-vendor/etc/VideoLog_dynamic.xml
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 vendor/etc/init/v3avpud.rc
 vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
+vendor/etc/VideoLog_dynamic.xml
+vendor/lib/mt6789/libmtk_drvb.so
+vendor/lib/mt6789/libvcodec_utility.so
+vendor/lib/mt6789/libvcodec_utility_v3a.so
+vendor/lib/mt6789/libvcodecdrv.so
+vendor/lib/mt6789/libvcodecdrv_v3a.so
+vendor/lib/mt6789/libvpudv3a_vcodec.so
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/HEVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
 vendor/lib/libAVCSecureVencCA.so
 vendor/lib/libHEVCdec_sa.ca7.android.so;DISABLE_CHECKELF
 vendor/lib/libadpcmdec_mtk.so
+vendor/lib/libbwc.so
 vendor/lib/libh264dec_customize.so
 vendor/lib/libh264dec_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib/libh264dec_sd.ca7.so;DISABLE_CHECKELF
 vendor/lib/libh264dec_se.ca7.so;DISABLE_CHECKELF
 vendor/lib/libh264enc_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib/libhevce_sb.ca7.android.so;DISABLE_CHECKELF
+vendor/lib/libion_mtk.so
+vendor/lib/libion_ulit.so
+vendor/lib/libladder.so
 vendor/lib/libmp3dec_mtk.so
 vendor/lib/libmp4enc_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib/libmp4enc_xa.ca7.so;DISABLE_CHECKELF
@@ -626,27 +636,13 @@ vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib/libvp8dec_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib/libvp8enc_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib/libvp9dec_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libbwc.so
-vendor/lib/libion_mtk.so
-vendor/lib/libion_ulit.so
-vendor/lib/libladder.so
-vendor/lib/mt6789/libmtk_drvb.so
-vendor/lib/mt6789/libvcodec_utility.so
-vendor/lib/mt6789/libvcodec_utility_v3a.so
-vendor/lib/mt6789/libvcodecdrv.so
-vendor/lib/mt6789/libvcodecdrv_v3a.so
-vendor/lib/mt6789/libvpudv3a_vcodec.so
+vendor/lib64/mt6789/libmtk_drvb.so
 vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/HEVCSecureVdecCA.so
 vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libAVCSecureVencCA.so
 vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libbwc.so
-vendor/lib64/libmp3dec_mtk.so
-vendor/lib64/libvcodec_oal.so;DISABLE_CHECKELF
-vendor/lib64/libvcodecdrv_header_stub.so
-vendor/lib64/mt6789/libmtk_drvb.so
-vendor/lib64/libvpu.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
@@ -658,6 +654,7 @@ vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
+vendor/lib64/libmp3dec_mtk.so
 vendor/lib64/libmvpu_cic_ci_compiler.so
 vendor/lib64/libmvpu_clc_cl_compiler.so
 vendor/lib64/libmvpu_clc_mvpu_debuginfo.so
@@ -673,6 +670,9 @@ vendor/lib64/libmvpu_runtime.so
 vendor/lib64/libmvpu_runtime_pub.so
 vendor/lib64/libmvpuop_mtk_cv.so
 vendor/lib64/libmvpuop_mtk_nn.so
+vendor/lib64/libvcodec_oal.so;DISABLE_CHECKELF
+vendor/lib64/libvcodecdrv_header_stub.so
+vendor/lib64/libvpu.so
 
 # MMAgent
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
@@ -695,10 +695,14 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk
-vendor/etc/armnn_app.config
 vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc
-vendor/etc/nnapi_powerhal.json
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
+vendor/etc/armnn_app.config
+vendor/etc/nnapi_powerhal.json
+vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so;DISABLE_CHECKELF
+vendor/lib64/mt6789/libneuron_adapter_mgvi.so
+vendor/lib64/mt6789/libneuron_runtime.5.so
+vendor/lib64/mt6789/libnir_neon_driver.so
 vendor/lib64/libarmnn.so
 vendor/lib64/libarmnn_ndk.mtk.vndk.so
 vendor/lib64/libasn1c_core.so
@@ -712,18 +716,14 @@ vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
 vendor/lib64/libnpagent.so
 vendor/lib64/libnpagent_server.so
 vendor/lib64/libtflite_mtk.so
-vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so;DISABLE_CHECKELF
-vendor/lib64/mt6789/libneuron_adapter_mgvi.so
-vendor/lib64/mt6789/libneuron_runtime.5.so
-vendor/lib64/mt6789/libnir_neon_driver.so
 vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.2.so
 
 # NVRAM
+vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/fuelgauged
 vendor/bin/fuelgauged_nvram
-vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/nvram_daemon
 vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
@@ -744,11 +744,11 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so;DISABLE_CHECKELF
-vendor/lib64/libpqframework.so
-vendor/lib64/librgbwlightsensor.so
 vendor/lib64/mt6789/libpq_cust_base.so
 vendor/lib64/mt6789/libpq_prot.so
 vendor/lib64/mt6789/libpqparamparser.so
+vendor/lib64/libpqframework.so
+vendor/lib64/librgbwlightsensor.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.1.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.10.so
@@ -810,23 +810,15 @@ vendor/thh/ta/40188311faf343488db888ad39496f9a.ta
 vendor/thh/ta/5020170115e016302017012521300000.ta
 vendor/thh/ta/655a4b46cd7711eaaafbf382a6988e7b.ta
 vendor/thh/ta/86f623f6a2994dfdb560ffd3e5a62c29.ta
+vendor/thh/ta/8aaaf201246000007143fe4f7c823c80.ta
 vendor/thh/ta/c09c9c5daa504b78b0e46eda61556c3a.ta
 vendor/thh/ta/c1882f2d885e4e13a8c8e2622461b2fa.ta
 vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta
 vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta
-vendor/thh/ta/8aaaf201246000007143fe4f7c823c80.ta
 vendor/thh/ta/isee_model.json
 
 # Thermal
 vendor/bin/mi_thermald
-vendor/etc/thermal-camera.conf
-vendor/etc/thermal-chg-only.conf
-vendor/etc/thermal-map.conf
-vendor/etc/thermal-mgame.conf
-vendor/etc/thermal-normal.conf
-vendor/etc/thermal-tgame.conf
-vendor/etc/thermal-video.conf
-vendor/etc/thermal-videochat.conf
 vendor/etc/thermal/disable_skin_control.conf
 vendor/etc/thermal/disable_thermal.conf
 vendor/etc/thermal/disable_thermal_temp.conf
@@ -836,11 +828,19 @@ vendor/etc/thermal/thermal_mtbf.conf
 vendor/etc/thermal/thermal_policy_00.conf
 vendor/etc/thermal/thermal_policy_02.conf
 vendor/etc/thermal/thermal_policy_08.conf
+vendor/etc/thermal-camera.conf
+vendor/etc/thermal-chg-only.conf
+vendor/etc/thermal-map.conf
+vendor/etc/thermal-mgame.conf
+vendor/etc/thermal-normal.conf
+vendor/etc/thermal-tgame.conf
+vendor/etc/thermal-video.conf
+vendor/etc/thermal-videochat.conf
 vendor/etc/thermald-devices.conf
 
 # Wi-Fi
-vendor/bin/conninfra_loader
 vendor/bin/hw/tetheroffloadservice
+vendor/bin/conninfra_loader
 vendor/bin/netdagent
 vendor/bin/wlan_assistant
 vendor/bin/wmt_launcher
@@ -848,7 +848,7 @@ vendor/bin/wmt_loader
 vendor/etc/init/netdagent.rc
 vendor/etc/init/tetheroffloadservice.rc
 vendor/etc/init/wlan_assistant.rc
-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
-vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
