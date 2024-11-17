@@ -7,6 +7,8 @@ endif
 PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.RILMUXD=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.AT=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.AAL=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.AALLightSensor=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.RILC-MTK=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.RILC=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.RfxMainThread=$(VENDOR_LOG_LEVEL) \
@@ -241,6 +243,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.CarrierExpressServiceImpl=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.CarrierExpressServiceImplExt=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.PhoneConfigurationSettings=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.Light=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.libPowerHal=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.mtkpower@impl=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.mtkpower_client=$(VENDOR_LOG_LEVEL) \
@@ -280,4 +283,5 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.gralloc4=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.OpenGLRenderer=S \
     persist.log.tag.MDP=$(VENDOR_LOG_LEVEL)
+
 
