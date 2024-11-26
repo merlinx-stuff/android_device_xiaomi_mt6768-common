@@ -289,7 +289,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayMT6768 \
-    DocumentsUIOverlayMT6768 \ 
+    DocumentsUIOverlayMT6768 \
     FrameworksResOverlayMT6768 \
     SettingsOverlayMT6768 \
     TelephonyOverlayMT6768 \
