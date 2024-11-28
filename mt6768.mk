@@ -85,7 +85,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
-    vendor.goodix.hardware.fingerprint@1.0
+    vendor.goodix.hardware.fingerprint@1.0 \
+    vendor.goodix.hardware.fingerprintextension@1.0
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
