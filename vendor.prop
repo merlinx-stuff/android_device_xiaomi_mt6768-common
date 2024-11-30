@@ -98,6 +98,7 @@ ro.vendor.colorpick_adjust=true
 ro.vendor.cabc.enable=true
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
+persist.vendor.sys.mtkaal.function=0
 
 # FM Radio
 ro.vendor.builtin_fm_antenna_support=1
