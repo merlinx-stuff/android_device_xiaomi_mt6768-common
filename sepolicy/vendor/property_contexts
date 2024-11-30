@@ -10,10 +10,13 @@ vendor.debug.camera.enableMetaMerge			u:object_r:vendor_mtk_camera_prop:s0
 vendor.debug.tpi.                     			u:object_r:vendor_mtk_camera_prop:s0
 persist.vendor.camera.                                  u:object_r:vendor_mtk_camera_prop:s0
 persist.camera.module.                                  u:object_r:vendor_mtk_camera_prop:s0
+persist.camera.dualcal.state                            u:object_r:vendor_mtk_camera_prop:s0
+vendor.camera.operationmode                             u:object_r:vendor_mtk_camera_prop:s0
 
 # Fingerprint
 persist.vendor.sys.fp.                                  u:object_r:vendor_fingerprint_prop:s0
 vendor.fps_hal.                                         u:object_r:vendor_fingerprint_prop:s0
+sys.fp.vendor						u:object_r:vendor_fingerprint_prop:s0
 
 # Thermal
 vendor.sys.thermal.     				u:object_r:vendor_thermal_engine_prop:s0
