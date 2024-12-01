@@ -287,5 +287,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.VidhanceContext=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.OpenGLRenderer=S \
     persist.log.tag.MDP=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.android.hardware.sensors@2.0-service-mediatek=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.Acceleration=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.GPUAUX=$(VENDOR_LOG_LEVEL)
 
