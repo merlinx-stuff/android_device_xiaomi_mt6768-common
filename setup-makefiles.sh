@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+# 
 # Copyright (C) 2016 The CyanogenMod Project
 # Copyright (C) 2017-2020 The LineageOS Project
 #
@@ -20,6 +20,16 @@ if [ ! -f "${HELPER}" ]; then
     exit 1
 fi
 source "${HELPER}"
+
+# Function to add vendor imports
+function vendor_imports() {
+    cat <<EOF >>"$1"
+        "device/xiaomi/mt6768-common",
+        "hardware/mediatek",
+        "hardware/mediatek/libmtkperf_client",
+        "hardware/xiaomi"
+EOF
+}
 
 # Initialize the helper for common
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
