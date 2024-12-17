@@ -263,7 +263,6 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlayMT6768 \
     FrameworksResOverlayMT6768 \
     SettingsOverlayMT6768 \
     SystemUIOverlayMT6768 \
