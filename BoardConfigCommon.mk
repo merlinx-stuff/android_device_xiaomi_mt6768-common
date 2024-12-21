@@ -60,6 +60,9 @@ BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_xiaomi_mt6768
 TARGET_RECOVERY_DEVICE_MODULES := libinit_xiaomi_mt6768
 
+# Enable F2FS Compression
+PRODUCT_FS_COMPRESSION := 1
+
 # Kernel
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
